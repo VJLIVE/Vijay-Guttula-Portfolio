@@ -75,7 +75,7 @@ const Skills = () => {
               <Tooltip key={skill.name}>
                 <TooltipTrigger>
                   <div className="group flex flex-col items-center justify-center gap-2">
-                    <div className="w-16 h-16 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-2">
+                    <div className="w-14 h-14 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-2">
                       <SkillIcon iconName={skill.icon}/>
                     </div>
                   </div>
