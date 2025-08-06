@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Rocket, X } from 'lucide-react';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -43,8 +44,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="#home" className="flex items-center gap-2 font-bold text-xl">
-            <Rocket className="w-6 h-6 text-primary" />
-            <span>Cosmic Portfolio</span>
+            <Image src="/logo/logo.jpg" alt="Logo" width={28} height={28} className="w-7 h-7" />
+            <span>Vijay Guttula</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -71,7 +72,7 @@ const Header = () => {
                 <div className="flex flex-col h-full">
                    <div className="flex justify-between items-center border-b pb-4 mb-4">
                      <Link href="#home" className="flex items-center gap-2 font-bold text-lg" onClick={closeSheet}>
-                        <Rocket className="w-5 h-5 text-primary" />
+                        <Image src="/logo/logo.jpg" alt="Logo" width={22} height={22} className="w-6 h-6" />
                         <span>Cosmic Portfolio</span>
                       </Link>
                       <Button variant="ghost" size="icon" onClick={closeSheet}>
