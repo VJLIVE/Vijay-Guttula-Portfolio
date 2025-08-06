@@ -1,5 +1,10 @@
 import SectionHeading from '../section-heading';
-import { Card, CardContent } from '@/components/ui/card';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const skills = [
   { name: 'React', icon: 'react' },
@@ -34,7 +39,7 @@ const SkillIcon = ({ iconName }: { iconName: string }) => {
             <svg role="img" viewBox="0 0 256 256"><path fill="#FFCA28" d="M43.34 209.52l-6.4-11.1L128 8.8l91.06 189.62-55.85-32.22z"/><path fill="#FFA000" d="M128 8.8l-84.66 200.72L128 158.4l55.85 52.84z"/><path fill="#F57C00" d="m183.85 211.24l-55.85-52.84v-99.6z"/></svg>
         ),
         docker: (
-            <svg role="img" viewBox="0 0 256 256"><path fill="#2496ED" d="M247.1 128.2c-2.4-18.3-15.1-34.4-32.9-42.3-5.3-2.3-10.8-4-16.4-5-9-1.6-17.7-2.7-25-4.5-12.7-3.1-22.1-12.2-25.5-25C144.3 40 136.7 32 127.3 32h-.6c-9.4 0-17 8-17.7 19.3-3.4 12.8-12.8 21.9-25.5 25-7.3 1.8-16 2.9-25 4.5-5.6 1-11.1 2.7-16.4 5-17.9 7.9-30.5 24-32.9 42.3-1.1 8.2-1.1 16.5 0 24.7 2.4 18.3 15.1 34.4 32.9 42.3 5.3 2.3 10.8 4 16.4 5 9 1.6 17.7 2.7 25 4.5 12.7 3.1 22.1 12.2 25.5 25c2.9 10.9 11.2 18.1 21.6 18.1h.6c10.4 0 18.7-7.2 21.6-18.1 3.4-12.8 12.8-21.9 25.5-25 7.3-1.8 16-2.9 25-4.5 5.6-1 11.1-2.7 16.4-5 17.9-7.9 30.5-24 32.9-42.3 1.1-8.2 1.1-16.5 0-24.7zM96 112H80v16H64v-16H48v-16h16V80h16v16h16v16zm32 16h-16v16h-16v-16h-16v-16h16V96h16v16h16v16zm48-16h-16v16h-16v-16h-16v-16h16V80h16v16h16v16z"/></svg>
+            <svg role="img" viewBox="0 0 256 256"><path fill="#2496ED" d="M247.1 128.2c-2.4-18.3-15.1-34.4-32.9-42.3-5.3-2.3-10.8-4-16.4-5-9-1.6-17.7-2.7-25-4.5-12.7-3.1-22.1-12.2-25.5-25C144.3 40 136.7 32 127.3 32h-.6c-9.4 0-17 8-17.7 19.3-3.4 12.8-12.8 21.9-25.5 25-7.3 1.8-16 2.9-25 4.5-5.6 1-11.1 2.7-16.4 5-17.9 7.9-30.5 24-32.9 42.3-1.1 8.2-1.1 16.5 0 24.7 2.4 18.3 15.1 34.4 32.9 42.3 5.3 2.3 10.8 4 16.4 5 9 1.6 17.7 2.7 25 4.5 12.7 3.1 22.1 12.2 25.5 25c2.9 10.9 11.2 18.1 21.6 18.1h.6c10.4 0 18.7-7.2 21.6-18.1 3.4-12.8 12.8-21.9 25.5-25 7.3 1.8-16-2.9-25-4.5 5.6-1 11.1-2.7 16.4-5 17.9-7.9 30.5-24 32.9-42.3 1.1-8.2 1.1-16.5 0-24.7zM96 112H80v16H64v-16H48v-16h16V80h16v16h16v16zm32 16h-16v16h-16v-16h-16v-16h16V96h16v16h16v16zm48-16h-16v16h-16v-16h-16v-16h16V80h16v16h16v16z"/></svg>
         ),
         javascript: (
             <svg role="img" viewBox="0 0 128 128"><path fill="#F7DF1E" d="M0 0h128v128H0z"/><path d="M110.1 94.9c-2.4 7.5-8.1 12.9-17.2 15.3-8.8 2.4-18.4.6-26.2-4.9-5.1-3.6-8.9-8.4-11.1-13.8-3.7-9.3-3.7-19.6 0-28.9.1-.1.1-.1.2-.2l13.6-8c.1-.1.2-.1.3 0l11.6 6.8c.1.1.2.2.1.3-4.6 7.8-4.6 17.1 0 24.9.1.2.2.2.3.2 7.8 4.6 17.1 4.6 24.9 0l.2-.1c.1-.1.2-.1.3 0l11.6 6.8c.1.1.1.2.1.3zM45.1 94.9c-2.4 7.5-8.1 12.9-17.2 15.3-8.8 2.4-18.4.6-26.2-4.9-5.1-3.6-8.9-8.4-11.1-13.8-3.7-9.3-3.7-19.6 0-28.9.1-.1.1-.1.2-.2l13.6-8c.1-.1.2-.1.3 0l11.6 6.8c.1.1.2.2.1.3-4.6 7.8-4.6 17.1 0 24.9.1.2.2.2.3.2 7.8 4.6 17.1 4.6 24.9 0l.2-.1c.1-.1.2-.1.3 0l11.6 6.8c.1.1.1.2.1.3z"/></svg>
@@ -64,16 +69,24 @@ const Skills = () => {
     <section id="skills" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <SectionHeading>My Tech Stack</SectionHeading>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-          {skills.map((skill) => (
-            <Card key={skill.name} className="group bg-card p-4 flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:-translate-y-2 glow-on-hover">
-              <div className="w-16 h-16 text-primary group-hover:scale-110 transition-transform duration-300">
-                  <SkillIcon iconName={skill.icon}/>
-              </div>
-              <p className="font-semibold text-center text-card-foreground">{skill.name}</p>
-            </Card>
-          ))}
-        </div>
+        <TooltipProvider>
+          <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+            {skills.map((skill) => (
+              <Tooltip key={skill.name}>
+                <TooltipTrigger>
+                  <div className="group flex flex-col items-center justify-center gap-2">
+                    <div className="w-16 h-16 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-2">
+                      <SkillIcon iconName={skill.icon}/>
+                    </div>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{skill.name}</p>
+                </TooltipContent>
+              </Tooltip>
+            ))}
+          </div>
+        </TooltipProvider>
       </div>
     </section>
   );

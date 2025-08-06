@@ -32,8 +32,8 @@ const Experience = () => {
         <div className="relative max-w-4xl mx-auto">
           <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border/50" />
           {experiences.map((exp, index) => (
-            <div key={index} className="mb-12 flex justify-between items-center w-full">
-              <div className={`w-full md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:order-1' : 'md:order-3 md:text-right'}`}>
+            <div key={index} className="relative mb-12 flex justify-between items-center w-full">
+              <div className={`w-full md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8 md:order-3 md:text-right'}`}>
                 <Card className="bg-background border-border/50 p-6 glow-on-hover">
                   <CardHeader className="p-0">
                     <CardTitle className="text-xl text-primary">{exp.role}</CardTitle>
@@ -55,12 +55,10 @@ const Experience = () => {
                   </CardContent>
                 </Card>
               </div>
-              <div className="hidden md:flex justify-center w-16 order-2">
-                <div className="z-10 bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center">
+              <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-primary text-primary-foreground rounded-full w-8 h-8 items-center justify-center">
                   <Code className="w-4 h-4" />
-                </div>
               </div>
-               <div className="hidden md:block w-[calc(50%-2rem)] order-1"></div>
+               <div className="hidden md:block w-1/2"></div>
             </div>
           ))}
         </div>
