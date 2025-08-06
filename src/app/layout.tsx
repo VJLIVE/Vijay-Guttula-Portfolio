@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Cosmic Portfolio',
+  title: 'Vijay Guttula',
   description: 'A personal portfolio by a passionate developer.',
 };
 
