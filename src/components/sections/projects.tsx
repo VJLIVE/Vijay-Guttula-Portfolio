@@ -76,7 +76,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20 md:py-28 bg-card">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <SectionHeading>Projects</SectionHeading>
         <div className="flex justify-center mb-12">
           <div className="p-1 bg-background rounded-full border border-border/50">

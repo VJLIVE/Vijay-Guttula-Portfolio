@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const Overview = () => {
   return (
     <section id="about" className="py-20 md:py-28 bg-card">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <SectionHeading>About Me</SectionHeading>
         <Card className="bg-background border-none shadow-2xl shadow-primary/10">
           <CardContent className="p-8 md:p-12">
