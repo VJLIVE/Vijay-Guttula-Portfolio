@@ -11,6 +11,7 @@ import Certifications from '@/components/sections/certifications';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/footer';
 import BackToTop from '@/components/back-to-top';
+import MotionSection from '@/components/motion-section';
 
 export default function Home() {
   return (
@@ -18,15 +19,33 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Overview />
-        <Skills />
-        <Roles />
-        <Experience />
-        <Projects />
-        <Education />
-        <Achievements />
-        <Certifications />
-        <Contact />
+        <MotionSection>
+          <Overview />
+        </MotionSection>
+        <MotionSection>
+          <Skills />
+        </MotionSection>
+        <MotionSection>
+          <Roles />
+        </MotionSection>
+        <MotionSection>
+          <Experience />
+        </MotionSection>
+        <MotionSection>
+          <Projects />
+        </MotionSection>
+        <MotionSection>
+          <Education />
+        </MotionSection>
+        <MotionSection>
+          <Achievements />
+        </MotionSection>
+        <MotionSection>
+          <Certifications />
+        </MotionSection>
+        <MotionSection>
+          <Contact />
+        </MotionSection>
       </main>
       <Footer />
       <BackToTop />
