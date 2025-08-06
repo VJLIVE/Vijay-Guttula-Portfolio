@@ -32,9 +32,9 @@ const Experience = () => {
         <div className="relative max-w-4xl mx-auto">
           <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border/50" />
           {experiences.map((exp, index) => (
-            <div key={index} className="relative mb-12 flex items-center w-full">
-              <div className={`w-full md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8'}`}>
-                 <Card className="bg-background border-border/50 p-6 glow-on-hover text-left">
+            <div key={index} className="relative mb-12 flex justify-between items-center w-full">
+              <div className={`w-full md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8 md:order-3'}`}>
+                 <Card className="bg-background border-border/50 p-6 glow-on-hover">
                   <CardHeader className="p-0">
                     <CardTitle className="text-xl text-primary">{exp.role}</CardTitle>
                     <div className="flex items-center gap-2 mt-2 text-muted-foreground">
@@ -47,7 +47,7 @@ const Experience = () => {
                       <Calendar className="w-4 h-4" />
                       <span>{exp.duration}</span>
                     </div>
-                    <div className={`flex flex-wrap gap-2 ${index % 2 !== 0 ? 'justify-start' : 'md:justify-end'}`}>
+                    <div className={`flex flex-wrap gap-2 ${index % 2 === 0 ? 'md:justify-end' : 'justify-start'}`}>
                       {exp.tech.map((t) => (
                         <Badge key={t} variant="secondary">{t}</Badge>
                       ))}
