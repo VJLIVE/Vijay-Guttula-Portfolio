@@ -13,7 +13,7 @@ const Overview = () => {
               <div className="md:col-span-1">
                 <div className="aspect-square rounded-full overflow-hidden border-4 border-primary/50 shadow-lg mx-auto w-48 h-48 md:w-full md:h-full">
                   <Image
-                    src="https://placehold.co/400x400.png"
+                    src="/overview/vijay.jpg"
                     alt="Alex Doe"
                     width={400}
                     height={400}
