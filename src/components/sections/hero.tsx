@@ -1,12 +1,14 @@
 import { Mouse } from 'lucide-react';
+import { StarsBackground } from '@/components/ui/stars-background';
+import { ShootingStars } from '@/components/ui/shooting-stars';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const Hero = () => {
   return (
     <section id="home" className="relative w-full h-screen flex flex-col justify-center items-center text-center overflow-hidden">
-      <div className="absolute inset-0 bg-grid -z-10"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
+      <StarsBackground className="-z-10" />
+      <ShootingStars className="-z-10" />
       <div className="relative z-10 px-4">
         <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-2">
           Alex Doe
