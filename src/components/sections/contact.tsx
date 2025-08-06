@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin} from 'lucide-react';
 import SectionHeading from '../section-heading';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -22,9 +22,8 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>;
 
 const socialLinks = [
-  { name: 'GitHub', icon: <Github className="w-8 h-8" />, url: 'https://github.com' },
-  { name: 'LinkedIn', icon: <Linkedin className="w-8 h-8" />, url: 'https://linkedin.com' },
-  { name: 'Twitter', icon: <Twitter className="w-8 h-8" />, url: 'https://twitter.com' },
+  { name: 'GitHub', icon: <Github className="w-8 h-8" />, url: 'https://github.com/vjlive' },
+  { name: 'LinkedIn', icon: <Linkedin className="w-8 h-8" />, url: 'https://linkedin.com/in/vijay-guttula' },
 ];
 
 const Contact = () => {
