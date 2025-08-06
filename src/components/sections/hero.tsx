@@ -11,10 +11,10 @@ const Hero = () => {
       <ShootingStars className="-z-10" />
       <div className="relative z-10 px-4">
         <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-2">
-          Alex Doe
+          Vijay Guttula
         </h1>
         <p className="mt-4 text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-          A creative developer weaving cosmic digital experiences from front-end to back-end, passionate about building modern, responsive, and performant web applications.
+          Web Developer Intern @Codient Systems | Project Admin @GSSOC'25 | OCI Certified | NSOT Junior Coding Olympiad Rank 131 | CO Lead @ABC VJIT |
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Link href="#projects">
