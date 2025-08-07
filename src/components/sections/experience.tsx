@@ -5,21 +5,33 @@ import { Building, Calendar, Code } from 'lucide-react';
 
 const experiences = [
   {
-    role: 'Lead Frontend Developer',
-    company: 'Stellar Solutions Inc.',
-    duration: '2021 - Present',
+    role: 'React Native and Backend Developer',
+    company: 'Codient Systems',
+    duration: 'July 2025 - Present',
     tech: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Vercel'],
   },
   {
-    role: 'Full Stack Engineer',
-    company: 'Quantum Innovations',
-    duration: '2019 - 2021',
+    role: 'Project Admin - Athletix',
+    company: 'GirlScript Summer of Code 2025',
+    duration: 'July 2025 - Present',
+    tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP'],
+  },
+  {
+    role: 'Contributor',
+    company: 'Social Summer of Code 2025',
+    duration: 'June 2025 - August 2025',
+    tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP'],
+  },
+  {
+    role: 'Frontend Web Developer',
+    company: 'Codient Systems',
+    duration: 'April 2025 - June 2025',
     tech: ['Node.js', 'Vue.js', 'PostgreSQL', 'Docker', 'AWS'],
   },
   {
-    role: 'Junior Web Developer',
-    company: 'Digital Nebula',
-    duration: '2017 - 2019',
+    role: 'Contributor',
+    company: 'GirlScript Summer of Code 2024 - Extended',
+    duration: 'October 2024 - December 2024',
     tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP'],
   },
 ];
