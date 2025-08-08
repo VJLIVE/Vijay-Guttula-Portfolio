@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Github, Linkedin} from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import SectionHeading from '../section-heading';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -12,6 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from "@/hooks/use-toast";
 import Link from 'next/link';
+import emailjs from 'emailjs-com';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -33,13 +34,30 @@ const Contact = () => {
     defaultValues: { name: '', email: '', message: '' },
   });
 
-  const onSubmit = (data: ContactFormValues) => {
-    console.log(data);
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    form.reset();
+  const onSubmit = async (data: ContactFormValues) => {
+    try {
+      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
+      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
+      const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
+
+      await emailjs.send(serviceID, templateID, {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      }, userID);
+
+      toast({
+        title: "Message Sent!",
+        description: "Thanks for reaching out. I'll get back to you soon.",
+      });
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
