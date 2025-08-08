@@ -5,21 +5,21 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const achievements = [
   {
     icon: <Trophy className="h-8 w-8 text-primary" />,
-    title: 'Innovator of the Year',
-    description: 'Awarded for developing a novel real-time data processing engine, increasing system efficiency by 200%.',
-    date: '2023',
+    title: '10th Rank - Social Summer of Code 2025',
+    description: 'Ranked 10th out of 1360+ contributors for outstanding open-source contributions during Social Summer of Code 2025.',
+    date: '2025',
   },
   {
     icon: <Award className="h-8 w-8 text-primary" />,
-    title: 'First Place - Global Hackathon',
-    description: 'Led a team to victory in a 48-hour coding competition by building a blockchain-based solution for supply chain transparency.',
-    date: '2022',
+    title: "Silver Winner - Algo Git Squad'25 (July)",
+    description: 'Won 150 Algos as Silver Winner in Algo Git Squad July 2025 coding contest.',
+    date: '2025',
   },
   {
     icon: <Trophy className="h-8 w-8 text-primary" />,
-    title: 'Open Source Contributor Award',
-    description: 'Recognized for significant contributions to a major open-source machine learning library.',
-    date: '2021',
+    title: 'Rank 131 of 16,398 participants in Junior Coding Olympiad',
+    description: 'Ranked 131 out of 16,398 participants in the Junior Coding Olympiad by Newton School of Technology',
+    date: '2024',
   },
 ];
 
