@@ -43,6 +43,8 @@ const categorizedSkills: { [category: string]: { name: string; img: string }[] }
     { name: 'TypeScript', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
     { name: 'Node.js', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
     { name: 'Drizzle', img: '/logo/tech/drizzle.png' },
+    { name: 'Metamask', img: 'https://images.ctfassets.net/clixtyxoaeas/1ezuBGezqfIeifWdVtwU4c/d970d4cdf13b163efddddd5709164d2e/MetaMask-icon-Fox.svg' },
+    { name: 'Pinata Cloud', img: 'https://avatars.githubusercontent.com/u/43088506?s=200&v=4' },
   ],
   'AI / ML': [
     { name: 'Python', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
