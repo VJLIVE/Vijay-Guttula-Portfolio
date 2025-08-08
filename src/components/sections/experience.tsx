@@ -8,31 +8,31 @@ const experiences = [
     role: 'React Native and Backend Developer',
     company: 'Codient Systems',
     duration: 'July 2025 - Present',
-    tech: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Vercel'],
+    tech: ['React Native', 'MongoDB', 'Express.js', 'Expo', 'Node.js', 'JWT', 'REST API', 'Git', 'Gitlab', 'Postman', 'Async Storage', 'Axios'],
   },
   {
     role: 'Project Admin - Athletix',
     company: 'GirlScript Summer of Code 2025',
     duration: 'July 2025 - Present',
-    tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP'],
+    tech: ['Flutter', 'Dart', 'Firebase', 'Git', 'GitHub', 'REST API', 'Material UI'],
   },
   {
     role: 'Contributor',
     company: 'Social Summer of Code 2025',
     duration: 'June 2025 - August 2025',
-    tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP'],
+    tech: ['React.js','Next.js', 'Node.js', 'Express.js', 'MongoDB', 'Git', 'GitHub', 'REST API', 'Tailwind CSS', 'Flutter', 'Firebase', 'SQLite', 'Drizzle ORM', 'JWT', 'OAuth', 'Dart', 'PostgreSQL', 'Clerk Js'],
   },
   {
     role: 'Frontend Web Developer',
     company: 'Codient Systems',
     duration: 'April 2025 - June 2025',
-    tech: ['Node.js', 'Vue.js', 'PostgreSQL', 'Docker', 'AWS'],
+    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'JWT', 'TailwindCSS', 'REST API', 'Postman', 'AWS'],
   },
   {
     role: 'Contributor',
     company: 'GirlScript Summer of Code 2024 - Extended',
     duration: 'October 2024 - December 2024',
-    tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.js','Firebase','Git', 'GitHub', 'REST API', 'Tailwind CSS', 'Bootstrap'],
   },
 ];
 
