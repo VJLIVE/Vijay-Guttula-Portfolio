@@ -31,7 +31,7 @@ const allProjects = [
     title: 'NFT Terminal Monad',
     category: 'blockchain',
     image: 'https://github.com/user-attachments/assets/0da1f769-6756-465a-b4a6-49594d726a25',
-    description: 'A decentralized NFT marketplace on the Ethereum blockchain, allowing users to mint, buy, and sell digital assets.',
+    description: 'A decentralized NFT marketplace on the Ethereum blockchain, allowing users to mint and see digital assets.',
     tags: ['Next.js', 'TypeScript','Metamask Wallet','Solidity', 'Hardhat', 'Ethers.js','Pinata Cloud','Shadcn UI', 'Aceternity UI'],
     link: 'https://nftterminal.netlify.app/',
     aiHint: 'blockchain interface'
