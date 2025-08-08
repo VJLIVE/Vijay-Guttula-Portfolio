@@ -38,8 +38,8 @@ const Certifications = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {certifications.map((cert, index) => (
             <Card key={index} className="flex flex-col text-center items-center p-6 bg-background border-border/50 glow-on-hover">
-              <CardHeader className="p-0">
-                <div className="mb-4">{cert.logo}</div>
+              <CardHeader className="p-0 flex flex-col items-center justify-center">
+                <div className="mb-4 flex items-center justify-center">{cert.logo}</div>
                 <p className="text-sm font-medium text-muted-foreground">{cert.issuer}</p>
               </CardHeader>
               <CardContent className="flex-grow p-0 mt-4">
