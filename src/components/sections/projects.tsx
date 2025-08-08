@@ -16,7 +16,8 @@ const allProjects = [
     description: 'Store, and manage API keys with enterprise-grade security. Built for developers who demand both simplicity and robust protection.',
     tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Neon DB', 'Tailwind CSS', 'NextAuth.js', 'JWT', 'AES Encryption',],
     link: 'https://key-nest-sigma.vercel.app/',
-    aiHint: 'web application for API key management'
+    aiHint: 'web application for API key management',
+    status: 'pending',
   },
   {
     title: 'Athletix',
@@ -25,16 +26,18 @@ const allProjects = [
     description: 'A mobile application for athletes to track their workouts, nutrition, and performance metrics, built with Flutter and Firebase.',
     tags: ['Flutter', 'Dart', 'Firebase', 'Firestore Database','GCP','Google Maps SDK', 'Cloudinary API','Git', 'GitHub', 'REST API', 'Material UI'],
     link: 'https://github.com/VJLIVE/Athletix',
-    aiHint: 'mobile application'
+    aiHint: 'mobile application',
+    status: 'completed',
   },
   {
     title: 'NFT Terminal Monad',
     category: 'blockchain',
     image: 'https://github.com/user-attachments/assets/0da1f769-6756-465a-b4a6-49594d726a25',
-    description: 'A decentralized NFT marketplace on the Ethereum blockchain, allowing users to mint and see digital assets.',
+    description: 'A decentralized NFT marketplace on the Ethereum blockchain, allowing users to mint, buy, and sell digital assets.',
     tags: ['Next.js', 'TypeScript','Metamask Wallet','Solidity', 'Hardhat', 'Ethers.js','Pinata Cloud','Shadcn UI', 'Aceternity UI'],
     link: 'https://nftterminal.netlify.app/',
-    aiHint: 'blockchain interface'
+    aiHint: 'blockchain interface',
+    status: 'completed',
   },
 ];
 
@@ -81,7 +84,16 @@ const Projects = () => {
                 </div>
               </CardHeader>
               <CardContent className="p-6 flex-grow">
-                <CardTitle className="mb-2 text-xl">{project.title}</CardTitle>
+                <div className="mb-2 flex items-center justify-between">
+                  <span className="text-xl font-semibold">{project.title}</span>
+                  <span className="flex items-center gap-1 text-xs font-medium px-2 py-1 rounded-full bg-muted-foreground/10">
+                    <span
+                      className={`inline-block w-2 h-2 rounded-full ${project.status === 'completed' ? 'bg-green-500' : 'bg-yellow-400'}`}
+                      aria-label={project.status === 'completed' ? 'Completed' : 'Pending'}
+                    ></span>
+                    {project.status === 'completed' ? 'Completed' : 'Pending'}
+                  </span>
+                </div>
                 <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
