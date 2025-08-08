@@ -5,28 +5,40 @@ import { Badge } from '@/components/ui/badge';
 
 const certifications = [
   {
-    name: 'Certified Next.js Developer',
-    issuer: 'Vercel',
+    name: 'Oracle Cloud Infrastructure 2025 Foundations Associate (1Z0-1085-25)',
+    issuer: 'Oracle',
     logo: <ShieldCheck className="w-10 h-10 text-primary" />,
-    date: 'Issued: May 2024',
+    date: 'Issued: 2025',
   },
   {
-    name: 'Professional Cloud Architect',
-    issuer: 'Google Cloud',
+    name: 'Google Cloud Bootcamp Certificate',
+    issuer: 'GeeksforGeeks',
     logo: <ShieldCheck className="w-10 h-10 text-primary" />,
-    date: 'Issued: Dec 2023',
+    date: 'Issued: 2023',
   },
   {
-    name: 'TypeScript Expert',
-    issuer: 'DevCerts',
+    name: 'Postman API Student Certification',
+    issuer: 'Postman API',
     logo: <ShieldCheck className="w-10 h-10 text-primary" />,
-    date: 'Issued: June 2023',
+    date: 'Issued: 2025',
   },
   {
-    name: 'Certified Blockchain Developer',
-    issuer: 'Blockchain Council',
+    name: 'CRUD Operations in Mongo DB',
+    issuer: 'Mongo DB',
     logo: <ShieldCheck className="w-10 h-10 text-primary" />,
-    date: 'Issued: Jan 2022',
+    date: 'Issued: 2025',
+  },
+  {
+    name: 'Google CyberSecurity Professional Certificate',
+    issuer: 'Coursera',
+    logo: <ShieldCheck className="w-10 h-10 text-primary" />,
+    date: 'Issued: 2025',
+  },
+  {
+    name: 'Microsoft AI Skills Challenge',
+    issuer: 'Microsoft Learn',
+    logo: <ShieldCheck className="w-10 h-10 text-primary" />,
+    date: 'Issued: 2023',
   },
 ];
 
