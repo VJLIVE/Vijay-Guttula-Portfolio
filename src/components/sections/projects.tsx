@@ -10,62 +10,35 @@ import Link from 'next/link';
 
 const allProjects = [
   {
-    title: 'Cosmic E-commerce Platform',
+    title: 'KeyNest',
     category: 'web',
-    image: 'https://placehold.co/600x400.png',
-    description: 'A full-featured e-commerce site built with Next.js, Stripe, and Sanity CMS for a seamless shopping experience.',
-    tags: ['Next.js', 'React', 'Stripe'],
-    link: '#',
-    aiHint: 'e-commerce website'
+    image: 'https://github.com/user-attachments/assets/174cd367-df00-49b0-9544-19e4f8f94d10',
+    description: 'Store, and manage API keys with enterprise-grade security. Built for developers who demand both simplicity and robust protection.',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Neon DB', 'Tailwind CSS', 'NextAuth.js', 'JWT', 'AES Encryption',],
+    link: 'https://key-nest-sigma.vercel.app/',
+    aiHint: 'web application for API key management'
   },
   {
-    title: 'Galaxy Fit - Fitness Tracker',
+    title: 'Athletix',
     category: 'mobile',
-    image: 'https://placehold.co/600x400.png',
-    description: 'A cross-platform mobile app using React Native to track workouts, monitor progress, and connect with friends.',
-    tags: ['React Native', 'Firebase'],
-    link: '#',
+    image: '/projects/athletix.png',
+    description: 'A mobile application for athletes to track their workouts, nutrition, and performance metrics, built with Flutter and Firebase.',
+    tags: ['Flutter', 'Dart', 'Firebase', 'Firestore Database','GCP','Google Maps SDK', 'Cloudinary API','Git', 'GitHub', 'REST API', 'Material UI'],
+    link: 'https://github.com/VJLIVE/Athletix',
     aiHint: 'mobile application'
   },
   {
-    title: 'CryptoVerse NFT Marketplace',
+    title: 'NFT Terminal Monad',
     category: 'blockchain',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://github.com/user-attachments/assets/0da1f769-6756-465a-b4a6-49594d726a25',
     description: 'A decentralized NFT marketplace on the Ethereum blockchain, allowing users to mint, buy, and sell digital assets.',
-    tags: ['Solidity', 'Hardhat', 'Ethers.js'],
-    link: '#',
+    tags: ['Next.js', 'TypeScript','Metamask Wallet','Solidity', 'Hardhat', 'Ethers.js','Pinata Cloud','Shadcn UI', 'Aceternity UI'],
+    link: 'https://nftterminal.netlify.app/',
     aiHint: 'blockchain interface'
-  },
-  {
-    title: 'Starship Analytics Dashboard',
-    category: 'web',
-    image: 'https://placehold.co/600x400.png',
-    description: 'A real-time data visualization dashboard for tracking interstellar fleet metrics, built with D3.js and WebSockets.',
-    tags: ['D3.js', 'Node.js', 'WebSocket'],
-    link: '#',
-    aiHint: 'data dashboard'
-  },
-  {
-    title: 'Nebula Notes - Mobile App',
-    category: 'mobile',
-    image: 'https://placehold.co/600x400.png',
-    description: 'A simple yet powerful note-taking app for iOS and Android with cloud synchronization and offline capabilities.',
-    tags: ['Flutter', 'Firebase'],
-    link: '#',
-    aiHint: 'note taking app'
-  },
-  {
-    title: 'DeFi Staking Protocol',
-    category: 'blockchain',
-    image: 'https://placehold.co/600x400.png',
-    description: 'A decentralized finance protocol for staking tokens and earning rewards, audited for security and efficiency.',
-    tags: ['Smart Contracts', 'DeFi'],
-    link: '#',
-    aiHint: 'finance dashboard'
   },
 ];
 
-const categories = ['all', 'web', 'mobile', 'blockchain'];
+const categories = ['all', 'web', 'mobile', 'blockchain', 'AI/ML'];
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
