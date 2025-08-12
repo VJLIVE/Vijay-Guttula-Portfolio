@@ -5,6 +5,18 @@ import { Building, Calendar, Code } from 'lucide-react';
 
 const experiences = [
   {
+    role: 'Frontend App Developer',
+    company: 'Monavi',
+    duration: 'August 2025 - Present',
+    tech: ['Flutter', 'Dart', 'Git', 'GitHub', 'REST API', 'Material UI'],
+  },
+  {
+    role: 'Full Stack Engineer',
+    company: 'SheSync',
+    duration: 'July 2025 - Present',
+    tech: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Git', 'GitHub', 'REST API', 'Postman', 'JWT'],
+  },
+  {
     role: 'React Native and Backend Developer',
     company: 'Codient Systems',
     duration: 'July 2025 - Present',
