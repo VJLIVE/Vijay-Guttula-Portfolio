@@ -75,60 +75,58 @@ const categorizedSkills: { [category: string]: { name: string; img: string }[] }
 
 const Skills = () => {
   const categories = Object.keys(categorizedSkills);
-  const [activeTab, setActiveTab] = useState(categories[0]);
 
   return (
     <section id="skills" className="py-20 md:py-28 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 flex flex-col items-center justify-center">
         <SectionHeading>My Tech Stack</SectionHeading>
 
-        {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveTab(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                activeTab === category
-                  ? 'bg-primary text-white shadow'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
-            >
-              {category}
-            </button>
+        <div className="flex flex-col gap-8 items-center justify-center w-full max-w-6xl mx-auto">
+          {categories.map((category, idx) => (
+            <div key={category} className="flex flex-col md:flex-row items-start gap-6 w-full justify-start">
+              <div
+                className="min-w-[180px] md:w-1/4 text-lg font-semibold mb-2 md:mb-0 text-white text-left"
+                style={{
+                  textShadow: '0 0 4px #fff, 0 0 8px #00f6ff',
+                  filter: 'brightness(1.2)',
+                }}
+              >
+                {category}
+              </div>
+              <TooltipProvider>
+                <div
+                  className={`flex flex-wrap gap-4 md:gap-6 justify-start${idx === 0 ? ' ml-4 md:ml-8' : ''}`}
+                >
+                  {categorizedSkills[category].map((skill) => (
+                    <Tooltip key={skill.name}>
+                      <TooltipTrigger>
+                        <div className="group flex flex-col items-center justify-center gap-1">
+                          <div
+                            className="bg-white border border-gray-200 shadow-lg rounded-xl p-1 flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                            style={{ width: '40px', height: '40px' }}
+                          >
+                            <Image
+                              src={skill.img}
+                              alt={skill.name + ' logo'}
+                              width={24}
+                              height={24}
+                              className="object-contain drop-shadow-md"
+                            />
+                          </div>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="font-semibold text-sm text-primary drop-shadow-sm">
+                          {skill.name}
+                        </p>
+                      </TooltipContent>
+                    </Tooltip>
+                  ))}
+                </div>
+              </TooltipProvider>
+            </div>
           ))}
         </div>
-
-        {/* Icons Grid */}
-        <TooltipProvider>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 md:gap-8 justify-center">
-            {categorizedSkills[activeTab].map((skill) => (
-              <Tooltip key={skill.name}>
-                <TooltipTrigger>
-                  <div className="group flex flex-col items-center justify-center gap-2">
-                    <div
-                      className="bg-white border border-gray-200 shadow-lg rounded-xl p-2 flex items-center justify-center transition-transform duration-300 hover:scale-110 hover:shadow-2xl"
-                      style={{ width: '56px', height: '56px' }}
-                    >
-                      <Image
-                        src={skill.img}
-                        alt={skill.name + ' logo'}
-                        width={36}
-                        height={36}
-                        className="object-contain drop-shadow-md"
-                      />
-                    </div>
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p className="font-semibold text-base text-primary drop-shadow-sm">
-                    {skill.name}
-                  </p>
-                </TooltipContent>
-              </Tooltip>
-            ))}
-          </div>
-        </TooltipProvider>
       </div>
     </section>
   );
