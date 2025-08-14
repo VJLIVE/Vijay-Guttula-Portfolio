@@ -41,6 +41,7 @@ const categorizedSkills: { [category: string]: { name: string; img: string }[] }
     { name: 'Solidity', img: 'https://docs.soliditylang.org/en/latest/_images/solidity_logo.svg' },
     { name: 'Hardhat', img: '/logo/tech/hardhat.png' },
     { name: 'TypeScript', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+    { name: 'AlgoSdk', img: '/logo/tech/algorand.png' },
     { name: 'Node.js', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
     { name: 'Drizzle', img: '/logo/tech/drizzle.png' },
     { name: 'Metamask', img: 'https://images.ctfassets.net/clixtyxoaeas/1ezuBGezqfIeifWdVtwU4c/d970d4cdf13b163efddddd5709164d2e/MetaMask-icon-Fox.svg' },
