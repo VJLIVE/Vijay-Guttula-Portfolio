@@ -12,7 +12,7 @@ const achievements = [
   {
     icon: <Award className="h-8 w-8 text-primary" />,
     title: "Silver Winner - Algo Git Squad'25 (July)",
-    description: 'Won 150 Algos as Silver Winner in Algo Git Squad July 2025 coding contest.',
+    description: 'Won 150 Algos as Silver Winner in Algo Git Squad July 2025.',
     date: '2025',
   },
   {
