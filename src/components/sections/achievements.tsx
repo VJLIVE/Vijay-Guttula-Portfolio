@@ -5,8 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const achievements = [
   {
     icon: <Trophy className="h-8 w-8 text-primary" />,
-    title: '10th Rank - Social Summer of Code 2025',
-    description: 'Ranked 10th out of 1360+ contributors for outstanding open-source contributions during Social Summer of Code 2025.',
+    title: '14th Rank - Social Summer of Code 2025',
+    description: 'Ranked 14th out of 1360+ contributors for outstanding open-source contributions during Social Summer of Code 2025.',
     date: '2025',
   },
   {
