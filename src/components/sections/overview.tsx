@@ -24,10 +24,10 @@ const Overview = () => {
               </div>
               <div className="md:col-span-2 space-y-4">
                 <p className="text-lg text-muted-foreground">
-                  Hello! I'm a full-stack developer with a passion for creating beautiful and functional web applications. With over 5 years of experience in the industry, I have a proven track record of designing, developing, and deploying robust software solutions. My expertise spans across the entire development lifecycle, from concept to deployment.
+                  I'm a passionate Full-Stack Developer with hands-on experience in the MERN stack, Next.js, Flutter, Firebase, and Blockchain technologies. Currently pursuing a B.Tech in Information Technology at Vidya Jyothi Institute of Technology, I specialize in building scalable, user-friendly, and impactful digital solutions.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  I thrive on solving complex problems and am always eager to learn new technologies. My goal is to leverage my skills to build products that not only meet user needs but also provide an exceptional and intuitive experience. When I'm not coding, I enjoy exploring new galaxies in video games and experimenting with 3D modeling.
+                  Along with my technical skills, I have a strong foundation in data structures and algorithms, which enhances my problem-solving abilities. I'm an active open-source contributor and have been recognized for my contributions in various coding competitions.
                 </p>
               </div>
             </div>
