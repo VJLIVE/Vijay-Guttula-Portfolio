@@ -2,7 +2,6 @@ import Header from '@/components/header';
 import Hero from '@/components/sections/hero';
 import Overview from '@/components/sections/overview';
 import Skills from '@/components/sections/skills';
-import Roles from '@/components/sections/roles';
 import Experience from '@/components/sections/experience';
 import Projects from '@/components/sections/projects';
 import Education from '@/components/sections/education';
@@ -24,9 +23,6 @@ export default function Home() {
         </MotionSection>
         <MotionSection>
           <Skills />
-        </MotionSection>
-        <MotionSection>
-          <Roles />
         </MotionSection>
         <MotionSection>
           <Experience />
