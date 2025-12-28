@@ -5,6 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const achievements = [
   {
     icon: <Trophy className="h-8 w-8 text-primary" />,
+    title: 'Grand Finalist - Smart India Hackathon 2025',
+    description: 'Achieved Grand Finalist position among 3000+ teams in Smart India Hackathon 2025 organized by the Government of India.',
+    date: '2025',
+  },
+  {
+    icon: <Trophy className="h-8 w-8 text-primary" />,
     title: '14th Rank - Social Summer of Code 2025',
     description: 'Ranked 14th out of 1360+ contributors for outstanding open-source contributions during Social Summer of Code 2025.',
     date: '2025',
