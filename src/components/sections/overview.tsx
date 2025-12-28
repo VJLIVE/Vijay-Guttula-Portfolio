@@ -24,10 +24,13 @@ const Overview = () => {
               </div>
               <div className="md:col-span-2 space-y-4">
                 <p className="text-lg text-muted-foreground">
-                  I'm a passionate Full-Stack Developer with hands-on experience in the MERN stack, Next.js, Flutter, Firebase, and Blockchain technologies. Currently pursuing a B.Tech in Information Technology at Vidya Jyothi Institute of Technology, I specialize in building scalable, user-friendly, and impactful digital solutions.
+                  I'm a passionate Full-Stack Developer with hands-on experience in the MERN stack, Next.js, Flutter, Firebase, and Blockchain technologies. Currently pursuing a B.Tech in Information Technology at Vidya Jyothi Institute of Technology, also working as a Web Developer Intern at Lex Fintech.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  Along with my technical skills, I have a strong foundation in data structures and algorithms, which enhances my problem-solving abilities. I'm an active open-source contributor and have been recognized for my contributions in various coding competitions.
+                  I had also worked as a freelancer for various clients, delivering high-quality web and mobile applications.
+                  </p>
+                <p className="text-lg text-muted-foreground">
+                  Along with my technical skills, I'm an active open-source contributor and have been recognized for my contributions in various coding competitions.
                 </p>
               </div>
             </div>
