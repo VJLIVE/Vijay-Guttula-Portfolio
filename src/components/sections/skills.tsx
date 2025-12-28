@@ -59,8 +59,8 @@ const categorizedSkills: { [category: string]: { name: string; img: string }[] }
     { name: 'SQLite', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg' },
     { name: 'Neon DB', img: 'https://neon.com/brand/neon-logomark-light-color.svg' },
     { name: 'Supabase', img: 'https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg' },
-    { name: 'Prisma', img: 'https://cdn.worldvectorlogo.com/logos/prisma-4.svg' },
-    { name: 'Drizzle', img: '/logo/tech/drizzle.png' },
+    { name: 'Prisma ORM', img: 'https://cdn.worldvectorlogo.com/logos/prisma-4.svg' },
+    { name: 'Drizzle Kit ORM', img: '/logo/tech/drizzle.png' },
   ],
   'Tools & Others': [
     { name: 'C', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
