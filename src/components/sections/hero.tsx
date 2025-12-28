@@ -14,7 +14,7 @@ const Hero = () => {
           Vijay Guttula
         </h1>
         <p className="mt-4 text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-          Web Developer Intern @Codient Systems | Project Admin @GSSOC'25 | OCI Certified | NSOT Junior Coding Olympiad Rank 131 | CO Lead @ABC VJIT |
+          Building @Sketch Brains | SIH’25 Grand Finalist | Lead @ABC VJIT | Open Source Lead @GDGC VJIT | Junior Coding Olympiad Rank 131 | GSSOC’25 | SSOC’25 | OCI Certified |
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Link href="#projects">
