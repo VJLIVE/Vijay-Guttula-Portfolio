@@ -5,27 +5,27 @@ import { Building, Calendar, Code } from 'lucide-react';
 
 const experiences = [
   {
+    role: 'Web Developer Intern',
+    company: 'Lex Fintech',
+    duration: 'January 2026 - Present',
+    tech: ['Next.js', 'Nest.js', 'MySQL', 'Drizzle Kit ORM', 'React.js', 'Tailwind CSS'],
+  },
+  {
     role: 'Frontend App Developer',
     company: 'Monavi',
-    duration: 'August 2025 - Present',
+    duration: 'August 2025 - October 2025',
     tech: ['Flutter', 'Dart', 'Git', 'GitHub', 'REST API', 'Material UI'],
   },
   {
     role: 'Full Stack Engineer',
     company: 'SheSync',
-    duration: 'July 2025 - Present',
+    duration: 'July 2025 - October 2025',
     tech: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Git', 'GitHub', 'REST API', 'Postman', 'JWT'],
-  },
-  {
-    role: 'React Native and Backend Developer',
-    company: 'Codient Systems',
-    duration: 'July 2025 - Present',
-    tech: ['React Native', 'MongoDB', 'Express.js', 'Expo', 'Node.js', 'JWT', 'REST API', 'Git', 'Gitlab', 'Postman', 'Async Storage', 'Axios'],
   },
   {
     role: 'Project Admin - Athletix',
     company: 'GirlScript Summer of Code 2025',
-    duration: 'July 2025 - Present',
+    duration: 'July 2025 - September 2025',
     tech: ['Flutter', 'Dart', 'Firebase', 'Git', 'GitHub', 'REST API', 'Material UI'],
   },
   {
@@ -33,12 +33,6 @@ const experiences = [
     company: 'Social Summer of Code 2025',
     duration: 'June 2025 - August 2025',
     tech: ['React.js','Next.js', 'Node.js', 'Express.js', 'MongoDB', 'Git', 'GitHub', 'REST API', 'Tailwind CSS', 'Flutter', 'Firebase', 'SQLite', 'Drizzle ORM', 'JWT', 'OAuth', 'Dart', 'PostgreSQL', 'Clerk Js'],
-  },
-  {
-    role: 'Frontend Web Developer',
-    company: 'Codient Systems',
-    duration: 'April 2025 - June 2025',
-    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'JWT', 'TailwindCSS', 'REST API', 'Postman', 'AWS'],
   },
   {
     role: 'Contributor',
